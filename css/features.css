@@ -38,3 +38,8 @@
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
 }
+.features-icon-container svg {
+  width: 64px;
+  height: 64px;
+  fill: #2e2f42;
+}

@@ -96,3 +96,13 @@
   background-color: #404bbf;
   border-radius: 2px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.address {
+  font-style: normal;
+  margin-left: auto; 
+}
