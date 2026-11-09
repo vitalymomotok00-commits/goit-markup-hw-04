@@ -99,16 +99,22 @@
   border: 1px solid #ffffff;
   background-color: transparent;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-input::placeholder {
   color: #ffffff;
+}
+
+.footer-subscribe-input:focus {
+  border-color: #31d0aa;
+  outline: none;
 }
 
 .footer-subscribe-button {
@@ -127,6 +133,12 @@
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: #31d0aa;
 }
 
 .footer-subscribe-icon {
