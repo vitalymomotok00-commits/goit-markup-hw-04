@@ -1,76 +1,56 @@
+.team {
+  background-color: var(--cloud);
+}
+
 .team-list {
   display: flex;
   gap: 24px;
 }
-.team-item {
-  width: calc((100% - 72px) / 4);
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-}
-.team {
-    background-color: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
-.team-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
+
+.team-card {
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.team-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-.team-card-content {
-  padding: 32px 0;
-}
-
-.team-social-list {
+.team-card .social-links {
   display: flex;
-  justify-content: center;
   gap: 24px;
 }
 
-.team-social-item {
+.team-card .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
-}
-
-.team-social-link {
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: var(--cloud);
+  background-color: var(--iris);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: #404bbf;
+.team-card .link:hover,
+.team-card .link:focus {
+  background-color: var(--ocean);
 }
 
-.team-social-icon {
-  fill: #f4f4fd;
+.team-card .team-card-content {
+  padding: 32px 16px;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.team-card-content .card-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team-card-content .text {
+  margin-bottom: 8px;
 }
